@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* 全体 */
+body {
+    font-family: "ads-ayumin", sans-serif;
+    background-color: #f02c7a;
+    position: relative;
+    z-index: -2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/SVG/ピンク水玉背景.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+
+/* タイトル */
+.title {
+    font-family: dela-gothic-one, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #5c3b3b;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 見出し */
+h2 {
+    text-align: center;
+    color: #5c3b3b;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+/* 各セクション（生地ごと） */
+
+.section {
+    max-width: 1250px;
+    margin: 60px auto;
+    padding: 1rem;
+    background: #f8cddf;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(200, 0, 100, 0.1);
+}
+
+
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,285px);
+    column-gap: 90px;
+    row-gap: 70px;
+    justify-content: center;
+}
+
+.card {
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative;
+}
+
+.menu-items img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.menu-items h3 {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    color: #cc0066;
+}
+
+.menu-items .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #cc0066;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background-color: #ff69b4;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    transform: rotate(-10deg);
+    box-shadow: 2px 2px 5px rgba(255, 105, 180, 0.3);
+}
+
+
+/* ------------------モバイル用CSS ------------------*/
+
+@media screen and (max-width: 800px) {
+    .main {
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ページの概要文を記載します">
+  <title>Dolly donut</title>
+  <script src="js/toggle-menu.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="CSS/common.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'dlr8aua',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <!-- ヘッダーここから -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="index.html">
+        <img src="images/SVG/ドーリィちゃん.svg" alt="ドーリィちゃん" class="dolly-icon">
+        <div class="site-title">Dolly Donut</div>
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="access.html">店舗情報</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ヘッダーここまで -->
+
+
+  <!-- フッターここから -->
+
+   <section class="contact-section">
+    <h2>📍 Dolly Donutへのアクセス・SNS 🍩</h2>
+
+    <div class="info-grid">
+      <div class="info-item">📞 電話番号：098-988-6109</div>
+      <div class="info-item">📧 メール：info@dollydonut.jp</div>
+      <div class="info-item">🏠 住所：沖縄県南城市大里高平117-1</div>
+      <div class="info-item">🕒 営業時間：11:00～売り切れ次第終了<br>（日曜＆月曜 定休）</div>
+    </div>
+
+    <div class="sns-section">
+      <h3>🌟 フォローしてね！🌟</h3>
+      <div class="sns-icons">
+        <a href="#"><span>💚 LINE</span></a>
+        <a href="#"><span>📸 Instagram</span></a>
+        <a href="#"><span>🎵 TikTok</span></a>
+      </div>
+    </div>
+
+    <div class="map">
+      <p>アクセスマップ</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.729498013296!2d127.7436809!3d26.1729377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56ede75590705%3A0x402168d986c531d9!2z44CSOTAxLTEyMDUg5rKW57iE55yM5Y2X5Z-O5biC5aSn6YeM6auY5bmz77yR77yR77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1751003476938!5m2!1sja!2sjp"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">🍩 Dolly Donut</div>
+      <nav class="footer-nav">
+        <a href="#">🏠 トップ</a>
+        <a href="#">🍽 メニュー</a>
+        <a href="#">🗺 店舗情報</a>
+        <a href="#">✉️ お問い合わせ</a>
+      </nav>
+      <div class="footer-sns">
+        <span>💚</span>
+        <span>📸</span>
+        <span>🎵</span>
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- フッターここまで -->
+
+</body>
+
+
+</html>
