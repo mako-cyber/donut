@@ -277,6 +277,7 @@ img {
 .item-list p {
     font-weight: bold;
     color: #ee2f7b;
+    padding-bottom: 20px;
 }
 
 .link-buttton-area2 {
@@ -302,8 +303,9 @@ img {
     display: flex;
     justify-content: space-around;
     max-width: 1500px;
-    max-width: 90%;
+    max-width: 60%;
     margin-top: 60px;
+    gap: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -315,6 +317,7 @@ img {
 .line-up-box p {
     color: #5f2a1c;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .line-up-box img {
